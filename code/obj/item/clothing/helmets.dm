@@ -782,3 +782,13 @@
 	icon_state = "firefighter"
 	item_state = "firefighter"
 	seal_hair = 1
+
+/obj/item/clothing/head/helmet/stunthelmet
+	name = "Stunt Helmet"
+	desc = "Head injuries are the number one cause of brain damage among clowns. Usually from a fire extinguisher."
+	icon_state = "stunt-helmet"
+	item_state = "stunt-helmet"
+	seal_hair = 1
+	setupProperties()
+		..()
+		setProperty("meleeprot_head", 3)

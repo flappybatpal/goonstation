@@ -216,6 +216,13 @@
 				new /obj/item/pen/crayon/rainbow(src)
 			return 1
 
+/obj/storage/crate/clown/cannon
+	spawn_contents = list(/obj/clowncannon,
+	/obj/item/clothing/head/helmet/stunthelmet)
+	icon_state = "packingcrate10"
+	icon_opened = "packingcrate10_open"
+	icon_closed = "packingcrate10"
+
 /obj/storage/crate/materials
 	name = "building materials crate"
 	spawn_contents = list(/obj/item/sheet/steel/fullstack,

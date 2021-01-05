@@ -1106,6 +1106,7 @@ var/datum/preMapLoad/preMapLoad = new
 #include "code\obj\blob.dm"
 #include "code\obj\bookcase.dm"
 #include "code\obj\cement.dm"
+#include "code\obj\clowncannon.dm"
 #include "code\obj\construction_frame.dm"
 #include "code\obj\deathbutton.dm"
 #include "code\obj\debug_tools.dm"

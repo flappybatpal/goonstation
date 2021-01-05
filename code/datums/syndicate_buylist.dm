@@ -499,6 +499,15 @@ This is basically useless for anyone but miners.
 	job = list("Clown")
 	blockedmode = list(/datum/game_mode/spy, /datum/game_mode/revolution)
 
+	/datum/syndicate_buylist/traitor/clowncannon
+	name = "Clown Cannon"
+	item = /obj/storage/crate/clown/cannon
+	cost = 8
+	desc = "Not exactly stealthy, but it'll certainly make an impression."
+	job = list("Clown")
+	not_in_crates = 1
+	blockedmode = list(/datum/game_mode/spy, /datum/game_mode/revolution)
+
 /datum/syndicate_buylist/traitor/sinjector
 	name = "Speed Injector"
 	item = /obj/item/speed_injector
