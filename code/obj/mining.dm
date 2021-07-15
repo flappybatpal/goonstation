@@ -1519,6 +1519,8 @@
 	var/status = 0
 	var/digcost = 0
 	var/weakener = 0
+	var/item_charged = null
+	var/item_uncharged = null
 	var/image/powered_overlay = null
 	var/sound/hitsound_charged = 'sound/impact_sounds/Stone_Cut_1.ogg'
 	var/sound/hitsound_uncharged = 'sound/impact_sounds/Stone_Cut_1.ogg'
@@ -1566,6 +1568,9 @@
 		if (powered_overlay)
 			src.overlays += powered_overlay
 			signal_event("icon_updated")
+			if (item_charged)
+				item_state = item_charged
+				usr.update_inhands()
 		return
 
 	proc/power_down()
@@ -1573,6 +1578,9 @@
 		if (powered_overlay)
 			src.overlays = null
 			signal_event("icon_updated")
+			if (item_uncharged)
+				item_state = item_uncharged
+				usr.update_inhands()
 		return
 
 	attackby(obj/item/b as obj, mob/user as mob)
@@ -1611,6 +1619,8 @@ obj/item/clothing/gloves/concussive
 	icon = 'icons/obj/items/mining.dmi'
 	icon_state = "powerpick"
 	item_state = "ppick1"
+	item_charged = "ppick1"
+	item_uncharged = "ppick0"
 	flags = ONBELT
 	dig_strength = 2
 	digcost = 2
@@ -1630,14 +1640,10 @@ obj/item/clothing/gloves/concussive
 			if (!src.status)
 				boutput(user, "<span class='notice'>You power up [src].</span>")
 				src.power_up()
-				item_state = "ppick1"
-				user.update_inhands()
 				playsound(user.loc, "sound/items/miningtool_on.ogg", 30, 1)
 			else
 				boutput(user, "<span class='notice'>You power down [src].</span>")
 				src.power_down()
-				item_state = "ppick0"
-				user.update_inhands()
 				playsound(user.loc, "sound/items/miningtool_off.ogg", 30, 1)
 		else
 			boutput(user, "<span class='alert'>No charge left in [src].</span>")
@@ -1687,6 +1693,8 @@ obj/item/clothing/gloves/concussive
 	icon_state = "powerhammer"
 	inhand_image_icon = 'icons/mob/inhand/hand_tools.dmi'
 	item_state = "phammer1"
+	item_charged = "phammer1"
+	item_uncharged = "phammer0"
 	cell = new/obj/item/ammo/power_cell
 	force = 9
 	dig_strength = 3
@@ -1720,14 +1728,10 @@ obj/item/clothing/gloves/concussive
 			if (!src.status)
 				boutput(user, "<span class='notice'>You power up [src].</span>")
 				src.power_up()
-				item_state = "phammer1"
-				user.update_inhands()
 				playsound(user.loc, "sound/items/miningtool_on.ogg", 30, 1)
 			else
 				boutput(user, "<span class='notice'>You power down [src].</span>")
 				src.power_down()
-				item_state = "phammer0"
-				user.update_inhands()
 				playsound(user.loc, "sound/items/miningtool_off.ogg", 30, 1)
 		else
 			boutput(user, "<span class='alert'>No charge left in [src].</span>")
@@ -1750,6 +1754,8 @@ obj/item/clothing/gloves/concussive
 	icon_state = "powershovel"
 	inhand_image_icon = 'icons/mob/inhand/hand_tools.dmi'
 	item_state = "pshovel1"
+	item_charged = "pshovel1"
+	item_uncharged = "pshovel0"
 	flags = ONBELT
 	dig_strength = 0
 	digcost = 2
@@ -1770,14 +1776,10 @@ obj/item/clothing/gloves/concussive
 			if (!src.status)
 				boutput(user, "<span class='notice'>You power up [src].</span>")
 				src.power_up()
-				item_state = "pshovel1"
-				user.update_inhands()
 				playsound(user.loc, "sound/items/miningtool_on.ogg", 30, 1)
 			else
 				boutput(user, "<span class='notice'>You power down [src].</span>")
 				src.power_down()
-				item_state = "pshovel0"
-				user.update_inhands()
 				playsound(user.loc, "sound/items/miningtool_off.ogg", 30, 1)
 		else
 			boutput(user, "<span class='alert'>No charge left in [src].</span>")
