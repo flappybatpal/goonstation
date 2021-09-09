@@ -24,6 +24,8 @@ var/list/snd_macho_idle = list('sound/voice/macho/macho_alert16.ogg', 'sound/voi
 			src.create_reagents(1000)
 
 		src.changeStatus("stimulants", 15 MINUTES)
+		if (shitty)
+			src.make_jittery(1000)
 
 		src.equip_new_if_possible(/obj/item/clothing/shoes/macho, slot_shoes)
 		src.equip_new_if_possible(/obj/item/clothing/under/gimmick/macho, slot_w_uniform)
