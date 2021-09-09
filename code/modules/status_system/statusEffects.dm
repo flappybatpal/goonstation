@@ -302,7 +302,8 @@
 				M.delStatus("disorient")
 				if (M.misstep_chance)
 					M.change_misstep_chance(-INFINITY)
-				M.make_jittery(1000)
+				if(!ismachoman(M))
+					M.make_jittery(1000)
 				M.dizziness = max(0,M.dizziness-10)
 				M.changeStatus("drowsy", -20 SECONDS)
 				M.sleeping = 0
