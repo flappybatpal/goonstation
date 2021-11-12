@@ -2887,8 +2887,7 @@ var/list/mob_bird_species = list("smallowl" = /mob/living/critter/small_animal/b
 
 	hand_attack(atom/target, params, location, control, origParams)
 		if(istype(target, /mob/living))
-			var/mob/living/M = target
-			src.into_pocket(M, 0)
+			return
 		else
 			return ..()
 
