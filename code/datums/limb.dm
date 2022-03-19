@@ -75,6 +75,8 @@
 			return
 		if (issilicon(target))
 			return
+		if (isintangible(target))
+			return
 		user.grab_other(target)
 		user.lastattacked = target
 
