@@ -1,4 +1,31 @@
 
+(t)fri may 13 22
+(u)Flourish
+(+)Vampires and their thralls can now identify each other through small V icons.
+(t)thu may 12 22
+(u)Wisemonster
+(p)8549
+(e)⚖|balance
+(*)Arcfiend's Jolt ability will now apply burn damage to a target's heart throughout the ability if they do not have a gene resistant to electricity.
+(u)aloe
+(+)You can now meat spike monkeys by throwing them at the spike. You can also scan the spikes with a device analyzer.
+(t)wed may 11 22
+(u)BatElite
+(p)8484
+(e)|
+(+)Ghostdrones can now auto-pry floors when placing tiles, provided they left their omnitool on prying
+(u)Nexusuxen
+(p)8502
+(e)|
+(+)AI plating kits can now be applied to existing AIs that have the default skin!
+(u)zcrow
+(p)8493
+(e)|
+(*)Added "Change vocal pitch" verb to Robot Commands. Borgs can now modify their voices to better express themselves.
+(u)Wisemonster
+(p)8489
+(e)🗺|mapping
+(+)Added status displays to Atlas.
 (t)mon may 09 22
 (u)Wisemonster
 (p)8474
