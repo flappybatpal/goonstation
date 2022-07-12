@@ -1,5 +1,47 @@
 
+(t)tue jul 12 22
+(u)Flappybat
+(p)9585
+(e)⚖|balance
+(*)Human NPCs are no longer valid targets for Changeling's DNA absorb, Werewolf feast and Vampire blood abilities.
+(u)DimWhat
+(p)9587
+(e)🆕|feature
+(+)Bartenders can now use *twirl and *spin while holding glasses safely.
+(u)Azrun & Virvatuli
+(p)5663
+(e)⚖🔄|balance, rework
+(*)Slamguns are back!
+(+)Zipguns no longer accept shotgun shells.
+(u)Waffleloffle
+(p)9590
+(e)🎨|sprites
+(+)NanoTrasen's interior decoration committee has changed indoor plant suppliers after difficulties with the previous bush wholesaler.
+(u)Azrun
+(p)9529
+(e)🎨⚖|sprites, balance
+(*)New Space Epoxy to give strength to the windows, to the walls, and even pipes!
 (t)mon jul 11 22
+(u)Ikea
+(p)9537
+(e)⚖|balance
+(*)Furnaces can now accept any flammable material, with fuel effectiveness scaling with material flammability.
+(u)CheekyBrdy
+(p)9287
+(e)🎨|sprites
+(+)Mechanics now have mechanic headsets instead of engineering headsets.
+(u)CodeJester
+(p)9171
+(e)🐛|bug
+(+)Using floor tiles as a ghostdrone is less awful now.
+(u)Sord + Flourish
+(e)🆕🗺|feature, mapping
+(+)Added randomized rooms to Cog2.
+(u)HauntedAngel
+(p)9521
+(e)🆕|feature
+(+)Ingesting acid now scars your vocal chords and makes your voice appear as unknown.
+(+)Ingesting Synthflesh can repair the damage done from ingesting acid.
 (u)avimour
 (p)9573
 (e)⛔|removal
