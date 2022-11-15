@@ -159,7 +159,7 @@
 				waldo_mob.head.cant_self_remove = 1
 				waldo_mob.w_uniform.cant_other_remove = 1
 				waldo_mob.head.cant_other_remove = 1
-				equip_traitor(waldo_mob)
+				waldo_mob.add_antagonist(ROLE_TRAITOR)
 
 			if(ROLE_WIZARD)
 				waldo_mob.verbs += /client/proc/invisibility

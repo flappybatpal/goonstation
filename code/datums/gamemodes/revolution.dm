@@ -82,11 +82,11 @@
 
 	var/list/heads = get_living_heads()
 
-	if(!head_revolutionaries || !heads)
-		boutput(world, "<B><span class='alert'>Not enough players for revolution game mode. Restarting world in 5 seconds.</span></B>")
-		sleep(5 SECONDS)
-		Reboot_server()
-		return
+	//if(!head_revolutionaries || !heads)
+	//	boutput(world, "<B><span class='alert'>Not enough players for revolution game mode. Restarting world in 5 seconds.</span></B>")
+	//	sleep(5 SECONDS)
+	//	Reboot_server()
+	//	return
 
 	for(var/datum/mind/rev_mind in head_revolutionaries)
 		for(var/datum/mind/head_mind in heads)
@@ -110,7 +110,7 @@
 		send_tracker()
 
 /datum/game_mode/revolution/proc/equip_revolutionary(mob/living/carbon/human/rev_mob)
-	equip_traitor(rev_mob)
+	rev_mob.mind.add_antagonist(ROLE_HEAD_REV)
 
 	//var/the_slot = ""
 
