@@ -14,6 +14,7 @@
 			var/mob/living/traitor = src.owner.current
 			uplink = traitor.give_antagonist_uplink(ROLE_TRAITOR)
 		else
+			logTheThing(LOG_DEBUG, src.owner.current, "Attempted to give antagonist equipment to [src.owner.current] but they were not of type living.")
 
 	assign_objectives()
 		var/datum/objective_set/objective_set_path
