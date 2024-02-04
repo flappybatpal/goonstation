@@ -188,8 +188,6 @@ TYPEINFO(/obj/machinery/crusher)
 				user.emote("scream")
 				user.set_loc(get_turf(src)) //So it looks like they're actually pulled in
 				src.Bumped(user)
-				if(user) //Still here somehow?
-					user.gib() //Not any more you aren't.
 		else //Whew
 			//So that we can restore their proper values after
 			var/cmn = user.canmove
@@ -210,8 +208,6 @@ TYPEINFO(/obj/machinery/crusher)
 		user.emote("scream")
 		user.set_loc(get_turf(src)) //So it looks like they're actually pulled in
 		src.Bumped(user)
-		if(user) //Still here somehow?
-			user.gib() //Not any more you aren't.
 
 /obj/machinery/crusher/proc/new_poker(var/mob/jerk)
 	if(!islist(poking_jerks))
